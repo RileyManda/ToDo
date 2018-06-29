@@ -1,0 +1,14 @@
+
+
+
+<p>
+  <span matBadge={{task.selectedOptions.selected.length}} matBadgeOverlap="false">Selections</span>
+</p>
+<mat-selection-list #task>
+  <mat-list-option *ngFor="let task of typesOfTasks">
+    <mat-icon>Save</mat-icon>
+    {{task}}
+  <mat-divider></mat-divider>
+  </mat-list-option>
+</mat-selection-list>
+<button color="warm"  mat-fab>Save</button>
