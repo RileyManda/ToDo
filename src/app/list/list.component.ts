@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {MatSnackBar} from '@angular/material';
 import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -12,4 +11,5 @@ import { map } from 'rxjs/operators';
 })
 export class ListComponent {
   typesOfTasks: string[] = ['Shower','Breakfast','Study','Work','Lunch','Reading'];
+
 }
