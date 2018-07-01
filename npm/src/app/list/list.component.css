@@ -12,10 +12,12 @@
 }
 
 .task-form{
-margin-top: -150px;
+margin-top: -110px;
  height: 1.125em;
 
-}
+ }
+
+
 .btn-save{
 margin-top: 5px;
 margin-right: -240px
@@ -23,4 +25,7 @@ margin-right: -240px
 .del{
 margin-top: 20px;
 margin-right: -547px
+}
+.mat-radio-button ~ .mat-radio-button {
+  padding-right: 16px;
 }

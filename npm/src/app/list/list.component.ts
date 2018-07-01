@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component,NgZone, ViewChild } from '@angular/core';
 import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { map,take} from 'rxjs/operators';
 
 
 @Component({
@@ -10,6 +10,7 @@ import { map } from 'rxjs/operators';
   templateUrl: 'list.component.html',
 })
 export class ListComponent {
-  typesOfTasks: string[] = ['Shower','Breakfast','Study','Work','Lunch','Reading'];
+
+      tasks: string[] = ['Shower','Breakfast','Study','Work','Lunch','Reading'];
 
 }

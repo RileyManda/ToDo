@@ -7,12 +7,15 @@ namespace Composer\Autoload;
 class ComposerStaticInita5f357acb8fc8d89780fa9f74725825a
 {
     public static $files = array (
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'S' => 
         array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Component\\Console\\' => 26,
             'Slim\\' => 5,
         ),
         'P' => 
@@ -28,9 +31,26 @@ class ComposerStaticInita5f357acb8fc8d89780fa9f74725825a
         array (
             'FastRoute\\' => 10,
         ),
+        'D' => 
+        array (
+            'Doctrine\\ORM\\' => 13,
+            'Doctrine\\Instantiator\\' => 22,
+            'Doctrine\\Common\\Inflector\\' => 26,
+            'Doctrine\\Common\\Cache\\' => 22,
+            'Doctrine\\Common\\Annotations\\' => 28,
+            'Doctrine\\Common\\' => 16,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Component\\Console\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/console',
+        ),
         'Slim\\' => 
         array (
             0 => __DIR__ . '/..' . '/slim/slim/Slim',
@@ -51,6 +71,30 @@ class ComposerStaticInita5f357acb8fc8d89780fa9f74725825a
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
         ),
+        'Doctrine\\ORM\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/orm/lib/Doctrine/ORM',
+        ),
+        'Doctrine\\Instantiator\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
+        ),
+        'Doctrine\\Common\\Inflector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
+        ),
+        'Doctrine\\Common\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache',
+        ),
+        'Doctrine\\Common\\Annotations\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
+        ),
+        'Doctrine\\Common\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -59,6 +103,21 @@ class ComposerStaticInita5f357acb8fc8d89780fa9f74725825a
             'Pimple' => 
             array (
                 0 => __DIR__ . '/..' . '/pimple/pimple/src',
+            ),
+        ),
+        'D' => 
+        array (
+            'Doctrine\\DBAL\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/dbal/lib',
+            ),
+            'Doctrine\\Common\\Lexer\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/lexer/lib',
+            ),
+            'Doctrine\\Common\\Collections\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/collections/lib',
             ),
         ),
     );

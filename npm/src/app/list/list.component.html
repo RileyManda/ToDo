@@ -1,8 +1,6 @@
 
-
-
 <p>
-  <span  matBadge={{task.selectedOptions.selected.length}} matBadgeOverlap="false" accent>Selections</span>
+  <mat-icon  matBadge={{task.selectedOptions.selected.length}} matBadgeOverlap="false" matBadgeColor="accent">list</mat-icon>
 </p>
 
 <div class="main-div">
@@ -10,22 +8,24 @@
     <button mat-icon-button color="accent" class="del" matTooltip="Delete Selected list item"><mat-icon>delete</mat-icon></button>
   <mat-card-content>
     <mat-selection-list #task>
-      <mat-list-option class="list" *ngFor="let task of typesOfTasks">
-
-
-        {{task}}
-          <mat-divider></mat-divider>
-
+      <h3 matSubheader>Edit</h3>
+        <mat-label>Task</mat-label>
+           <mat-divider></mat-divider>
+      <mat-list-option class="list" *ngFor="let task of tasks">
+        <mat-icon matListIcon>edit</mat-icon>
+      <p>{{task}}</p>
+    <mat-divider></mat-divider>
       </mat-list-option>
     </mat-selection-list>
-
   </mat-card-content>
 </mat-card>
 </div>
-
+<!--<button  mat-fab color="accent" matTooltip="Add Task"><mat-icon>add</mat-icon></button>-->
 <form class="task-form">
   <mat-form-field class="task-full-width">
-    <input matInput placeholder="New Task">
+    <textarea matInput placeholder="New Task"
+
+     #newTask></textarea>
   </mat-form-field>
+  <button (click)="addTask(newTask.value)" class="btn-save" mat-button color="primary" matTooltip="Save new task"><mat-icon>save</mat-icon></button>
 </form>
-<button class="btn-save" mat-button color="accent"><mat-icon>save</mat-icon></button>
