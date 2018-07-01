@@ -22,6 +22,7 @@ MatSortModule,MatBadgeModule,MatInputModule } from '@angular/material';
 
 
 
+
   ],
   imports: [
     BrowserModule,
@@ -39,6 +40,7 @@ MatSortModule,MatBadgeModule,MatInputModule } from '@angular/material';
     MatInputModule,
     MatCardModule,
     MatTooltipModule,
+    FormsModule,
 
   ],
   providers: [],

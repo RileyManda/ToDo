@@ -1,7 +1,8 @@
-import { Component,NgZone, ViewChild } from '@angular/core';
+import { Component,NgZone,ViewChild } from '@angular/core';
 import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map,take} from 'rxjs/operators';
+import { FormsModule } from '@angular/forms';
 
 
 @Component({
@@ -10,7 +11,14 @@ import { map,take} from 'rxjs/operators';
   templateUrl: 'list.component.html',
 })
 export class ListComponent {
-
-      tasks: string[] = ['Shower','Breakfast','Study','Work','Lunch','Reading'];
+  text = "";
+      tasks = ['Shower','Meditate','Breakfast','Work','Dinner','Read','Sleep'];
+      newTask ="";
+      pushTask = function(){
+      if(this.newTask != ""){
+        this.tasks.push(this.newTask);
+        this.newTask = "";
+      }
+      }
 
 }
