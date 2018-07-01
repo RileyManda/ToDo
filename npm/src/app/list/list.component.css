@@ -16,17 +16,16 @@
 .task-form{
 padding: 1px;
  font-size: 18px;
-
-
  }
- .task-styling{
-padding: 3px;
+ .task-sty{
+align-items: center;
   }
+
 .btn-save{
   height: 45px;
   width: 20px;
-
 }
+
 .del{
 margin-top: 20px;
 margin-right: -547px
@@ -48,4 +47,7 @@ margin-right: -547px
 }
 .edit-icon{
   float: right;
+}
+.input-dv{
+   @include transition(all .3s ease);
 }
