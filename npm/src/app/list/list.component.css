@@ -1,10 +1,11 @@
-
+.mat-list-option {
+    font-family: serif;
+  }
 .card-center{
   width: 50%;
   margin: 6px auto;
   border: 2px solid #d7d7d7;
   border-bottom: 0px;
-
 }
 .main-div{
   height: 100vh;
@@ -18,7 +19,8 @@ padding: 1px;
  font-size: 18px;
  }
  .task-sty{
-align-items: center;
+
+  margin-right: auto;
   }
 
 .btn-save{
@@ -33,21 +35,6 @@ margin-right: -547px
 .mat-radio-button ~ .mat-radio-button {
   padding-right: 16px;
 }
-.item-list {
-  display: flex;
-  flex-flow: row wrap;
-   .mat-selection-list {
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    width: 350px;
-    margin: 20px 20px 0 0;
-    align-items: center;
-    font-family:serif;
-
-  }
-}
 .edit-icon{
-  float: right;
-}
-.input-dv{
-   @include transition(all .3s ease);
+  margin-right: auto;
 }

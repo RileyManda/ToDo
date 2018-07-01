@@ -29,4 +29,6 @@ removeSelected = function() {
                return !task.selected
            })
          }
+    
+
 }
