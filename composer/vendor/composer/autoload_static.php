@@ -16,6 +16,7 @@ class ComposerStaticInita5f357acb8fc8d89780fa9f74725825a
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\Console\\' => 26,
+            'Slim\\Views\\' => 11,
             'Slim\\' => 5,
         ),
         'P' => 
@@ -50,6 +51,10 @@ class ComposerStaticInita5f357acb8fc8d89780fa9f74725825a
         'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'Slim\\Views\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/slim/php-view/src',
         ),
         'Slim\\' => 
         array (
@@ -122,12 +127,17 @@ class ComposerStaticInita5f357acb8fc8d89780fa9f74725825a
         ),
     );
 
+    public static $fallbackDirsPsr0 = array (
+        0 => __DIR__ . '/../..' . '/src',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInita5f357acb8fc8d89780fa9f74725825a::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInita5f357acb8fc8d89780fa9f74725825a::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInita5f357acb8fc8d89780fa9f74725825a::$prefixesPsr0;
+            $loader->fallbackDirsPsr0 = ComposerStaticInita5f357acb8fc8d89780fa9f74725825a::$fallbackDirsPsr0;
 
         }, null, ClassLoader::class);
     }
