@@ -3,7 +3,9 @@
   <mat-card-header>
     <mat-icon  matBadge={{task.selectedOptions.selected.length}} matBadgeOverlap="false" matBadgeColor="accent">list</mat-icon>
       <mat-card-subtitle>Selections</mat-card-subtitle>
+
       <button class="edit-icon" mat-icon-button color="primary" matTooltip="Edit List Item"><mat-icon>edit</mat-icon></button>
+
     </mat-card-header>
   <mat-card-subtitle>Tasks</mat-card-subtitle>
     <mat-card-content>
@@ -11,8 +13,9 @@
         <mat-divider></mat-divider>
         <mat-list-option *ngFor="let task of tasks;let ind = taskIndex">
       <mat-list-item>
-        <span class="task-sty"> {{task}}</span>
+        <span> {{task}}</span>
         <button (click) = "removeTask(ind)"mat-icon-button color="accent" matTooltip="Delete List Item"><mat-icon>delete</mat-icon></button>
+
       </mat-list-item>
       </mat-list-option>
       </mat-selection-list>

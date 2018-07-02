@@ -12,7 +12,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class ListComponent {
   text = "";
-      tasks = ['Shower','Meditate'];
+      tasks = [];
       newTask ="";
       pushTask = function(){
       if(this.newTask != ""){
@@ -29,6 +29,6 @@ removeSelected = function() {
                return !task.selected
            })
          }
-    
+
 
 }

@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule,Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { AppComponent } from './app.component';
@@ -19,6 +19,7 @@ MatSortModule,MatBadgeModule,MatInputModule } from '@angular/material';
     AppComponent,
     NavComponent,
     ListComponent,
+  
 
 
 
@@ -41,6 +42,7 @@ MatSortModule,MatBadgeModule,MatInputModule } from '@angular/material';
     MatCardModule,
     MatTooltipModule,
     FormsModule,
+
 
   ],
   providers: [],
