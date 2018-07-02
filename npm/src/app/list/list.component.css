@@ -24,8 +24,7 @@ padding: 1px;
   }
 
 .btn-save{
-  height: 30px;
-  width: 9px;
+min-width: 1%;
 }
 
 .del{

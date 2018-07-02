@@ -9,6 +9,7 @@ import {ListComponent } from './list/list.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
+import{HttpClientModule} from '@angular/common/http'
 import { MatToolbarModule, MatSidenavModule,
 MatIconModule, MatListModule, MatTableModule, MatPaginatorModule,
 MatSortModule,MatBadgeModule,MatInputModule,MatSnackBarModule } from '@angular/material';
@@ -41,6 +42,7 @@ import { SnackBarComponent } from './snack-bar/snack-bar.component';
     MatTooltipModule,
     FormsModule,
     MatSnackBarModule,
+    HttpClientModule
 
 
 
