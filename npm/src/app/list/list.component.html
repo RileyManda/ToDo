@@ -13,8 +13,9 @@
         <mat-divider></mat-divider>
         <mat-list-option *ngFor="let task of tasks;let ind = taskIndex">
       <mat-list-item>
+          <button (click) = "removeTask(ind)"mat-icon-button color="accent" matTooltip="Delete List Item"><mat-icon>delete</mat-icon></button>
         <span> {{task}}</span>
-        <button (click) = "removeTask(ind)"mat-icon-button color="accent" matTooltip="Delete List Item"><mat-icon>delete</mat-icon></button>
+
 
       </mat-list-item>
       </mat-list-option>
