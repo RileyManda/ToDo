@@ -11,7 +11,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatSidenavModule,
 MatIconModule, MatListModule, MatTableModule, MatPaginatorModule,
-MatSortModule,MatBadgeModule,MatInputModule } from '@angular/material';
+MatSortModule,MatBadgeModule,MatInputModule,MatSnackBarModule } from '@angular/material';
+import { SnackBarComponent } from './snack-bar/snack-bar.component';
 
 
 @NgModule({
@@ -19,10 +20,7 @@ MatSortModule,MatBadgeModule,MatInputModule } from '@angular/material';
     AppComponent,
     NavComponent,
     ListComponent,
-  
-
-
-
+    SnackBarComponent,
 
   ],
   imports: [
@@ -42,6 +40,12 @@ MatSortModule,MatBadgeModule,MatInputModule } from '@angular/material';
     MatCardModule,
     MatTooltipModule,
     FormsModule,
+    MatSnackBarModule,
+
+
+
+
+
 
 
   ],

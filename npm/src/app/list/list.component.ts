@@ -3,6 +3,8 @@ import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/l
 import { Observable } from 'rxjs';
 import { map,take} from 'rxjs/operators';
 import { FormsModule } from '@angular/forms';
+import {MatSnackBar} from '@angular/material';
+
 
 
 @Component({
@@ -11,12 +13,16 @@ import { FormsModule } from '@angular/forms';
   templateUrl: 'list.component.html',
 })
 export class ListComponent {
+  constructor(public snackBar:MatSnackBar){}
+
+
   text = "";
       tasks = [];
       newTask ="";
       pushTask = function(){
       if(this.newTask != ""){
         this.tasks.push(this.newTask);
+
         this.newTask = "";
       }
       }
@@ -29,6 +35,7 @@ removeSelected = function() {
                return !task.selected
            })
          }
-
-
-}
+         openSnackBar(){
+           this.snackBar.open("Task Completed","Close");
+         }
+       }

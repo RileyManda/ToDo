@@ -24,8 +24,8 @@ padding: 1px;
   }
 
 .btn-save{
-  height: 45px;
-  width: 20px;
+  height: 30px;
+  width: 9px;
 }
 
 .del{
@@ -38,6 +38,10 @@ margin-right: -547px
 .edit-icon{
   margin-right: auto;
 }
-.mat-radio-button ~ .mat-radio-button {
-  padding-right: 16px;
+.radio-button {
+  margin: 5px;
+}
+
+.selected-value {
+  margin: 15px 0;
 }
