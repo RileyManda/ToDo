@@ -29,7 +29,7 @@ abstract class AbstractResource
      */
     public function createEntityManager()
     {
-        $path = array('src');
+        $path = array('api');
         $devMode = true;
 
         $config = Setup::createAnnotationMetadataConfiguration($path, $devMode);

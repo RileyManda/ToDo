@@ -128,7 +128,7 @@ class ComposerStaticInita5f357acb8fc8d89780fa9f74725825a
     );
 
     public static $fallbackDirsPsr0 = array (
-        0 => __DIR__ . '/../..' . '/src',
+        0 => __DIR__ . '/../..' . '/api',
     );
 
     public static function getInitializer(ClassLoader $loader)
