@@ -14,6 +14,10 @@ $config = Setup::createAnnotationMetadataConfiguration(array(__DIR__."/Entity"),
 
 // database configuration parameters
 $conn = array(
+  'driver'   => 'pdo_mysql',
+    'user'     => 'root',
+    'password' => 'Admin2018@$#!',
+    'dbname'   => 'todo_db',
     'driver' => 'pdo_sqlite',
     'path' => __DIR__ . '/db.sqlite',
 );
