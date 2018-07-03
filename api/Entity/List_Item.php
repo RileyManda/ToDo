@@ -1,19 +1,14 @@
 <?php
-// src/entity//Item.php
+// src/Entity//list_item.php
+use Doctrine\ORM\Annotation as ORM;
 /**
- * @Entity @Table(name="list_items")
+ * @ORM\Entity @ORM\Table(name="list_tbl")
  **/
 class Item
 {
-    /**
-     * @var int
-     */
-      /** @Id @Column(type="integer") @GeneratedValue **/
+  /** @ORM\Id @ORM\Column(type="integer") @ORM\GeneratedValue **/
     protected $id;
-    /**
-     * @var string
-     */
-     /** @Column(type="string") **/
+  /** @ORM\Column(type="string") **/
     protected $name;
 
     public function getId()
