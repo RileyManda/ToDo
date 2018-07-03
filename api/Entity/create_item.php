@@ -6,6 +6,7 @@ $newItemName = $argv[1];
 
 $item = new Item();
 $item->setName($newItemName);
+
 $entityManager->persist($item);
 $entityManager->flush();
 

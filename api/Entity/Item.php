@@ -1,5 +1,5 @@
 <?php
-// src/Entity//list_item.php
+// Entity/Item.php
 use Doctrine\ORM\Annotation as ORM;
 /**
  * @ORM\Entity @ORM\Table(name="list_tbl")
