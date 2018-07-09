@@ -13,14 +13,13 @@
       <mat-list-item>
   <mat-slide-toggle color="primary" [checked]="task.complete" (click)="openSnackBar()" matTooltip="Slide to complete task"></mat-slide-toggle>
   <button (click) = "removeTask(ind)"mat-icon-button color="accent" matTooltip="Delete Task"><mat-icon>delete</mat-icon></button>
-        <span> {{task}}</span>
+  <span color="primary" selected>{{task}}</span>
       </mat-list-item>
       </mat-list-option>
       </mat-selection-list>
     </mat-card-content>
   <mat-divider [inset]="true"></mat-divider>
   <mat-card-actions>
-
 
       <mat-form-field>
         <input matInput dividerColor="accent" placeholder="New Task" type="text"[(ngModel)]="newTask" name="task" >

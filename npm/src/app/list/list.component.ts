@@ -5,8 +5,6 @@ import { map,take} from 'rxjs/operators';
 import { FormsModule } from '@angular/forms';
 import {MatSnackBar} from '@angular/material';
 
-
-
 @Component({
   selector: 'list',
   styleUrls: ['list.component.css'],
@@ -14,8 +12,6 @@ import {MatSnackBar} from '@angular/material';
 })
 export class ListComponent {
   constructor(public snackBar:MatSnackBar){}
-
-
   text = "";
       tasks = [];
       newTask ="";

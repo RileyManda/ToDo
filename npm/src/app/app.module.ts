@@ -11,7 +11,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
 import{HttpClientModule} from '@angular/common/http'
 import { MatToolbarModule, MatSidenavModule,MatIconModule, MatListModule, MatTableModule, MatPaginatorModule,
-MatSortModule,MatBadgeModule,MatInputModule,MatSnackBarModule,MatRadioModule,MatSlideToggleModule } from '@angular/material';
+MatSortModule,MatBadgeModule,MatInputModule,MatSnackBarModule,MatSlideToggleModule,MatChipsModule } from '@angular/material';
 import { SnackBarComponent } from './snack-bar/snack-bar.component';
 
 
@@ -42,8 +42,8 @@ import { SnackBarComponent } from './snack-bar/snack-bar.component';
     FormsModule,
     MatSnackBarModule,
     HttpClientModule,
-    MatRadioModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
