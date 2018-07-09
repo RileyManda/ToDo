@@ -18,7 +18,6 @@ export class ListComponent {
       pushTask = function(){
       if(this.newTask != ""){
         this.tasks.push(this.newTask);
-
         this.newTask = "";
       }
       }

@@ -102,6 +102,10 @@ class ComposerStaticInita5f357acb8fc8d89780fa9f74725825a
         ),
     );
 
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/../..' . '/api',
+    );
+
     public static $prefixesPsr0 = array (
         'P' => 
         array (
@@ -127,17 +131,13 @@ class ComposerStaticInita5f357acb8fc8d89780fa9f74725825a
         ),
     );
 
-    public static $fallbackDirsPsr0 = array (
-        0 => __DIR__ . '/../..' . '/api',
-    );
-
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInita5f357acb8fc8d89780fa9f74725825a::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInita5f357acb8fc8d89780fa9f74725825a::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInita5f357acb8fc8d89780fa9f74725825a::$fallbackDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInita5f357acb8fc8d89780fa9f74725825a::$prefixesPsr0;
-            $loader->fallbackDirsPsr0 = ComposerStaticInita5f357acb8fc8d89780fa9f74725825a::$fallbackDirsPsr0;
 
         }, null, ClassLoader::class);
     }
