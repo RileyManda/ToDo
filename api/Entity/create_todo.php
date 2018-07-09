@@ -1,5 +1,5 @@
 <?php
-// create_product.php <name>
+//Entity/create_todo.php <name>
 require_once "entity-con.php";
 
 $newTodoName = $argv[1];

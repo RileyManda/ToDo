@@ -34,13 +34,13 @@ abstract class AbstractResource
 
         $config = Setup::createAnnotationMetadataConfiguration($path, $devMode);
 
-        // define credentials...
+        // db credentials...
         $connectionOptions = array(
-            'driver'   => '',
-            'host'     => '',
-            'dbname'   => '',
-            'user'     => '',
-            'password' => '',
+            'driver'   => 'pdo_mysql',
+            'host'     => 'localhost',
+            'dbname'   => 'list_db',
+            'user'     => 'root',
+            'password' => 'Admin2018@$#!',
         );
 
         return EntityManager::create($connectionOptions, $config);
