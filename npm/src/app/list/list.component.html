@@ -3,7 +3,7 @@
   <mat-card-header>
     <mat-icon  matBadge={{task.selectedOptions.selected.length}} matBadgeOverlap="false" matBadgeColor="accent">list</mat-icon>
       <mat-card-subtitle>Selections</mat-card-subtitle>
-      <button class="edit-icon" mat-icon-button color="primary" matTooltip="Edit List Item"><mat-icon>edit</mat-icon></button>
+      <button class="edit-icon" mat-icon-button color="primary" matTooltip="Edit Task"><mat-icon>edit</mat-icon></button>
     </mat-card-header>
   <mat-card-subtitle>Tasks</mat-card-subtitle>
     <mat-card-content>
@@ -11,8 +11,8 @@
         <mat-divider></mat-divider>
         <mat-list-option *ngFor="let task of tasks;let ind = taskIndex">
       <mat-list-item>
-          <button (click) = "removeTask(ind)"mat-icon-button color="accent" matTooltip="Delete List Item"><mat-icon>delete</mat-icon></button>
- <input class="toggle" type="checkbox" [checked]="task.complete" (click)="openSnackBar()">
+  <mat-slide-toggle color="primary" [checked]="task.complete" (click)="openSnackBar()" matTooltip="Slide to complete task"></mat-slide-toggle>
+  <button (click) = "removeTask(ind)"mat-icon-button color="accent" matTooltip="Delete Task"><mat-icon>delete</mat-icon></button>
         <span> {{task}}</span>
       </mat-list-item>
       </mat-list-option>
@@ -20,13 +20,13 @@
     </mat-card-content>
   <mat-divider [inset]="true"></mat-divider>
   <mat-card-actions>
-    <form>
 
-      <mat-form-field class="task-form">
-        <input matInput placeholder="New Task" type="text"[(ngModel)]="newTask" name="task" >
+
+      <mat-form-field>
+        <input matInput dividerColor="accent" placeholder="New Task" type="text"[(ngModel)]="newTask" name="task" >
       </mat-form-field>
       <button class="btn-save" mat-mini-fab color="primary" matTooltip="Save" (click) ="pushTask()"><mat-icon>save</mat-icon></button>
-    </form>
+
   </mat-card-actions>
 </mat-card>
 
